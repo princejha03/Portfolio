@@ -20,11 +20,15 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
     nav ul {
       display: flex;
       list-style: none;
       gap: 1.2rem;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
     }
     nav ul li a {
       color: white;
@@ -153,6 +157,38 @@
     .footer-icons a:hover {
       color: #81c784;
     }
+
+    /* Media Queries for Mobile Responsiveness */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav ul {
+        justify-content: center;
+        gap: 0.8rem;
+      }
+      .hero {
+        padding: 3rem 1rem;
+      }
+      .hero img {
+        width: 120px;
+        height: 120px;
+      }
+      .section {
+        padding: 1.5rem;
+      }
+      .card, .cert-card {
+        padding: 1rem;
+      }
+      /* Optionally, adjust font sizes for better readability on small screens */
+      h1, h2, h3 {
+        font-size: 1.2rem;
+      }
+      p, a, button {
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -178,8 +214,16 @@
   <section id="skills" class="section">
     <h2>💻 Skills</h2>
     <div class="skills-grid">
-      <div>Python</div><div>C++</div><div>JavaScript</div><div>SQL</div><div>MongoDB</div>
-      <div>Power BI</div><div>HTML/CSS</div><div>Flask</div><div>Git & GitHub</div><div>Google Cloud</div>
+      <div>Python</div>
+      <div>C++</div>
+      <div>JavaScript</div>
+      <div>SQL</div>
+      <div>MongoDB</div>
+      <div>Power BI</div>
+      <div>HTML/CSS</div>
+      <div>Flask</div>
+      <div>Git & GitHub</div>
+      <div>Google Cloud</div>
       <div>OpenAI API</div>
     </div>
   </section>
@@ -187,30 +231,80 @@
   <section id="projects" class="section">
     <h2>🚀 Projects</h2>
     <div class="projects">
-      <div class="card"><h3>Drowsiness Detection</h3><p>Real-time alert system using ML & Twilio.</p><a href="https://github.com/princejha03/projects/tree/main/Drowsiness_Detection">🔗 View Project</a></div>
-      <div class="card"><h3>Face Attendance System</h3><p>Attendance system using Python + Flask.</p><a href="https://github.com/princejha03/projects/tree/main/face-recognition-based-attendance-system-master">🔗 View Project</a></div>
-      <div class="card"><h3>Fraud Detection</h3><p>ML + web interface to detect card fraud.</p><a href="https://github.com/princejha03/projects/tree/main/website">🔗 View Project</a></div>
-      <div class="card"><h3>Chatbot with OpenAI</h3><p>GPT-powered assistant for PDF understanding.</p><a href="https://github.com/princejha03/projects/tree/main/pdf-chatbot">🔗 View Project</a></div>
-      <div class="card"><h3>Power BI - IPL Dashboard</h3><p>Interactive dashboard using IPL data from 2008–2024.</p><a href="https://www.linkedin.com/posts/prince-jha-6baa1626b_powerbi-ipl2024-datawithstory-activity-7344983533662126080-jDQ0" target="_blank">🔗 View Dashboard</a></div>
-      <div class="card"><h3>Uber Data Analysis</h3><p>Visual dashboards analyzing 70,000+ Uber rides.</p><a href="https://www.linkedin.com/posts/prince-jha-6baa1626b_powerbi-dataanalytics-uberdataanalysis-activity-7346066722275151873-5Caa" target="_blank">🔗 View Dashboard</a></div>
-      <div class="card"><h3>Spotify Analytics</h3><p>Insights from top Spotify tracks using Power BI.</p><a href="https://www.linkedin.com/posts/prince-jha-6baa1626b_powerbi-spotifyanalytics-dashboarddesign-activity-7350261949131071491-KPtl" target="_blank">🔗 View Dashboard</a></div>
+      <div class="card">
+        <h3>Drowsiness Detection</h3>
+        <p>Real-time alert system using ML & Twilio.</p>
+        <a href="https://github.com/princejha03/projects/tree/main/Drowsiness_Detection">🔗 View Project</a>
+      </div>
+      <div class="card">
+        <h3>Face Attendance System</h3>
+        <p>Attendance system using Python + Flask.</p>
+        <a href="https://github.com/princejha03/projects/tree/main/face-recognition-based-attendance-system-master">🔗 View Project</a>
+      </div>
+      <div class="card">
+        <h3>Fraud Detection</h3>
+        <p>ML + web interface to detect card fraud.</p>
+        <a href="https://github.com/princejha03/projects/tree/main/website">🔗 View Project</a>
+      </div>
+      <div class="card">
+        <h3>Chatbot with OpenAI</h3>
+        <p>GPT-powered assistant for PDF understanding.</p>
+        <a href="https://github.com/princejha03/projects/tree/main/pdf-chatbot">🔗 View Project</a>
+      </div>
+      <div class="card">
+        <h3>Power BI - IPL Dashboard</h3>
+        <p>Interactive dashboard using IPL data from 2008–2024.</p>
+        <a href="https://www.linkedin.com/posts/prince-jha-6baa1626b_powerbi-ipl2024-datawithstory-activity-7344983533662126080-jDQ0" target="_blank">🔗 View Dashboard</a>
+      </div>
+      <div class="card">
+        <h3>Uber Data Analysis</h3>
+        <p>Visual dashboards analyzing 70,000+ Uber rides.</p>
+        <a href="https://www.linkedin.com/posts/prince-jha-6baa1626b_powerbi-dataanalytics-uberdataanalysis-activity-7346066722275151873-5Caa" target="_blank">🔗 View Dashboard</a>
+      </div>
+      <div class="card">
+        <h3>Spotify Analytics</h3>
+        <p>Insights from top Spotify tracks using Power BI.</p>
+        <a href="https://www.linkedin.com/posts/prince-jha-6baa1626b_powerbi-spotifyanalytics-dashboarddesign-activity-7350261949131071491-KPtl" target="_blank">🔗 View Dashboard</a>
+      </div>
     </div>
   </section>
 
   <section id="certifications" class="section">
     <h2>📜 Certifications</h2>
     <div class="certifications">
-      <div class="cert-card"><a href="https://www.linkedin.com/learning/certificates/1b51c8a6f32661a3fdb535424c9dc7aac4c64afecca475497bfe935bf832ffa9" target="_blank"><i class="fas fa-chart-line"></i><span class="cert-title">Career Essentials in Data Analysis – Microsoft & LinkedIn</span></a></div>
-      <div class="cert-card"><a href="https://www.simplilearn.com/skillup-certificate-landing?token=..." target="_blank"><i class="fas fa-lightbulb"></i><span class="cert-title">Power BI for Beginners – Simplilearn</span></a></div>
-      <div class="cert-card"><a href="https://www.simplilearn.com/skillup-certificate-landing?token=..." target="_blank"><i class="fas fa-file-excel"></i><span class="cert-title">Introduction to MS Excel – Simplilearn</span></a></div>
-      <div class="cert-card"><a href="https://www.hackerrank.com/certificates/284df6dee2de" target="_blank"><i class="fas fa-terminal"></i><span class="cert-title">Programming with PL/SQL – HackerRank</span></a></div>
+      <div class="cert-card">
+        <a href="https://www.linkedin.com/learning/certificates/1b51c8a6f32661a3fdb535424c9dc7aac4c64afecca475497bfe935bf832ffa9" target="_blank">
+          <i class="fas fa-chart-line"></i>
+          <span class="cert-title">Career Essentials in Data Analysis – Microsoft & LinkedIn</span>
+        </a>
+      </div>
+      <div class="cert-card">
+        <a href="https://www.simplilearn.com/skillup-certificate-landing?token=..." target="_blank">
+          <i class="fas fa-lightbulb"></i>
+          <span class="cert-title">Power BI for Beginners – Simplilearn</span>
+        </a>
+      </div>
+      <div class="cert-card">
+        <a href="https://www.simplilearn.com/skillup-certificate-landing?token=..." target="_blank">
+          <i class="fas fa-file-excel"></i>
+          <span class="cert-title">Introduction to MS Excel – Simplilearn</span>
+        </a>
+      </div>
+      <div class="cert-card">
+        <a href="https://www.hackerrank.com/certificates/284df6dee2de" target="_blank">
+          <i class="fas fa-terminal"></i>
+          <span class="cert-title">Programming with PL/SQL – HackerRank</span>
+        </a>
+      </div>
     </div>
   </section>
 
   <section id="resume" class="section">
     <h2>📄 Resume</h2>
     <p>You can download my most recent resume in PDF format below.</p>
-    <a href="resume.pdf" download><button>⬇️ Download Resume</button></a>
+    <a href="resume.pdf" download>
+      <button>⬇️ Download Resume</button>
+    </a>
   </section>
 
   <section id="contact" class="section">
