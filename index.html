@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prince | AI & DS Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f7ff;
+      color: #333;
+    }
+    header {
+      background-color: #031926;
+      padding: 1rem 2rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.2rem;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(rgba(3, 25, 38, 0.7), rgba(3, 25, 38, 0.7)), url('hero-bg.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 1rem;
+    }
+    .hero button {
+      margin-top: 1rem;
+      padding: 0.6rem 1.5rem;
+      border: none;
+      background: #81c784;
+      color: white;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .hero button:hover {
+      background: #66bb6a;
+    }
+    .section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+      text-align: center;
+    }
+    .skills-grid div {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .projects {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .card {
+      background: white;
+      padding: 1.2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .certifications {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .cert-card {
+      background: white;
+      padding: 1.2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .cert-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+    .cert-card a {
+      text-decoration: none;
+      color: #0a58ca;
+      font-weight: bold;
+      display: block;
+    }
+    .cert-card i {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+      color: #673ab7;
+    }
+    .cert-title {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+    #resume button {
+      padding: 0.6rem 1.5rem;
+      background: #1e88e5;
+      color: white;
+      border: none;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #resume button:hover {
+      background: #1565c0;
+    }
+    footer {
+      background-color: #031926;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .footer-icons a {
+      color: white;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+    .footer-icons a:hover {
+      color: #81c784;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Prince Jha</h1>
+    <nav>
+      <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="profile.jpg" alt="Profile Image">
+    <h2>Hello, I'm Prince</h2>
+    <p>AI & Data Science Enthusiast | Developer | Innovator</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>💻 Skills</h2>
+    <div class="skills-grid">
+      <div>Python</div><div>C++</div><div>JavaScript</div><div>SQL</div><div>MongoDB</div>
+      <div>Power BI</div><div>HTML/CSS</div><div>Flask</div><div>Git & GitHub</div><div>Google Cloud</div>
+      <div>OpenAI API</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>🚀 Projects</h2>
+    <div class="projects">
+      <div class="card"><h3>Drowsiness Detection</h3><p>Real-time alert system using ML & Twilio.</p><a href="https://github.com/princejha03/projects/tree/main/Drowsiness_Detection">🔗 View Project</a></div>
+      <div class="card"><h3>Face Attendance System</h3><p>Attendance system using Python + Flask.</p><a href="https://github.com/princejha03/projects/tree/main/face-recognition-based-attendance-system-master">🔗 View Project</a></div>
+      <div class="card"><h3>Fraud Detection</h3><p>ML + web interface to detect card fraud.</p><a href="https://github.com/princejha03/projects/tree/main/website">🔗 View Project</a></div>
+      <div class="card"><h3>Chatbot with OpenAI</h3><p>GPT-powered assistant for PDF understanding.</p><a href="https://github.com/princejha03/projects/tree/main/pdf-chatbot">🔗 View Project</a></div>
+      <div class="card"><h3>Power BI - IPL Dashboard</h3><p>Interactive dashboard using IPL data from 2008–2024.</p><a href="https://www.linkedin.com/posts/prince-jha-6baa1626b_powerbi-ipl2024-datawithstory-activity-7344983533662126080-jDQ0" target="_blank">🔗 View Dashboard</a></div>
+      <div class="card"><h3>Uber Data Analysis</h3><p>Visual dashboards analyzing 70,000+ Uber rides.</p><a href="https://www.linkedin.com/posts/prince-jha-6baa1626b_powerbi-dataanalytics-uberdataanalysis-activity-7346066722275151873-5Caa" target="_blank">🔗 View Dashboard</a></div>
+      <div class="card"><h3>Spotify Analytics</h3><p>Insights from top Spotify tracks using Power BI.</p><a href="https://www.linkedin.com/posts/prince-jha-6baa1626b_powerbi-spotifyanalytics-dashboarddesign-activity-7350261949131071491-KPtl" target="_blank">🔗 View Dashboard</a></div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <h2>📜 Certifications</h2>
+    <div class="certifications">
+      <div class="cert-card"><a href="https://www.linkedin.com/learning/certificates/1b51c8a6f32661a3fdb535424c9dc7aac4c64afecca475497bfe935bf832ffa9" target="_blank"><i class="fas fa-chart-line"></i><span class="cert-title">Career Essentials in Data Analysis – Microsoft & LinkedIn</span></a></div>
+      <div class="cert-card"><a href="https://www.simplilearn.com/skillup-certificate-landing?token=..." target="_blank"><i class="fas fa-lightbulb"></i><span class="cert-title">Power BI for Beginners – Simplilearn</span></a></div>
+      <div class="cert-card"><a href="https://www.simplilearn.com/skillup-certificate-landing?token=..." target="_blank"><i class="fas fa-file-excel"></i><span class="cert-title">Introduction to MS Excel – Simplilearn</span></a></div>
+      <div class="cert-card"><a href="https://www.hackerrank.com/certificates/284df6dee2de" target="_blank"><i class="fas fa-terminal"></i><span class="cert-title">Programming with PL/SQL – HackerRank</span></a></div>
+    </div>
+  </section>
+
+  <section id="resume" class="section">
+    <h2>📄 Resume</h2>
+    <p>You can download my most recent resume in PDF format below.</p>
+    <a href="resume.pdf" download><button>⬇️ Download Resume</button></a>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>📬 Contact</h2>
+    <p>Email: <a href="mailto:princejha1378@gmail.com">princejha1378@gmail.com</a></p>
+    <p>Phone: +91 8826181378</p>
+    <p>
+      <a href="https://www.linkedin.com/in/prince-jha-6baa1626b/">LinkedIn</a> |
+      <a href="https://github.com/princejha03">GitHub</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Prince Jha | Portfolio</p>
+    <div class="footer-icons">
+      <a href="https://github.com/princejha03"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/prince-jha-6baa1626b/"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:princejha1378@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
